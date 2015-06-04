@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<h5>Almaguin Campground-Reservation</h5>
+				</div>
+			</div>
+
+			<div class="panel-body">
+				<form action="" class="form-horizontal">
+					<!--accomodation area-->
+					<div class="form-group">
+						<label for="accomodation" class="control-label col-md-2 col-md-offset-2">Accomodation</label>
+						<div class="col-md-2">
+							<select name="" id="accomodation" class="form-control">
+								<option value="">RV</option>
+								<option value="">Ac Double</option>
+								<option value="">Ac Family</option>
+								<option value="">Ac Single</option>
+							</select>
+						</div>
+					</div>
+					<!--Name area-->
+					<div class="form-group inside">
+						<label for="name" class="col-md-2 col-md-offset-2 control-label">Name</label>
+						<div class="col-md-8">
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<select name="" id="name" class="form-control">
+										<option value="">Mr</option>
+										<option value="">Ms</option>
+										<option value="">Mrs</option>
+										<option value="">Eng</option>
+										<option value="">Dr</option>
+									</select>
+								</div>
+
+							</div>
+
+
+							<div class="col-md-3 mrg-left">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="First Name">
+								</div>
+
+							</div>
+							<div class="col-md-3 mrg-left">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Last Name">
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--Guests area-->
+					<div class="form-group inside">
+						<label for="guests" class="col-md-2 col-md-offset-2 control-label">Guests</label>
+						<div class="col-md-8">
+
+							<div class="col-md-2">
+								<div class="form-group">
+									<input type="number" class="form-control" placeholder="18+ years" id="guests">
+								</div>
+
+							</div>
+
+
+							<div class="col-md-3 mrg-left">
+								<div class="form-group">
+									<input type="number" class="form-control" placeholder="2-17 years">
+								</div>
+
+							</div>
+							<div class="col-md-3 mrg-left">
+								<div class="form-group">
+									<input type="number" class="form-control" placeholder="<2 years">
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!--Contact area-->
+					<div class="form-group inside">
+						<label for="contact" class="col-md-2 col-md-offset-2 control-label">Contact</label>
+						<div class="col-md-6">
+
+							<div class="col-md-11">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="E-mail">
+								</div>
+
+							</div>
+
+
+							<div class="col-md-11">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Phone:(xxx)-xxx xxxx">
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<!--Check in_out area-->
+					<div class='form-group'>
+						<label class="control-label col-md-2 col-md-offset-2" for="checkin">Checkin</label>
+						<div class='col-md-8'>
+							<div class='col-md-3'>
+								<div class='form-group inside input-group'>
+									<input class='form-control datepicker' id='checkin'>
+									<span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+								</div>
+							</div>
+							<label class='control-label col-md-2' for='checkout'>Checkout</label>
+							<div class='col-md-3'>
+								<div class='form-group inside input-group'>
+									<input class='form-control datepicker' id='checkout'>
+									<span class='input-group-addon'>
+                    <i class='glyphicon glyphicon-calendar'></i>
+                  </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--equipment/slide area-->
+					<div class='form-group'>
+						<label class='control-label col-md-2 col-md-offset-2' for='equipment'>Equipment type</label>
+						<div class='col-md-8'>
+							<div class='col-md-3'>
+								<div class='form-group inside'>
+									<select class='form-control' id='equipment'>
+										<option>Travel trailer</option>
+										<option>Water</option>
+										<option>Car/Bike</option>
+										<option>Tent trailer</option>
+										<option>Light Lamp</option>
+										<option>DSLR Camera</option>
+									</select>
+								</div>
+							</div>
+							<div class='col-md-9'>
+								<div class='form-group inside'>
+									<label class='control-label col-md-3' for='slide'>Slide-outs</label>
+									<div class='make-switch'>
+										<input id='slide' type='checkbox'>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--required service area-->
+					<div class='form-group'>
+						<label class='control-label col-md-2 col-md-offset-2' for='service'>Required Service</label>
+						<div class='col-md-8'>
+							<select class='multiselect' id='service' multiple='multiple'>
+								<option>Hydro</option>
+								<option>Water</option>
+								<option>Sewer</option>
+							</select>
+						</div>
+					</div>
+					<!--pets area-->
+					<div class='form-group'>
+						<label class='control-label col-md-2 col-md-offset-2' for='pets'>Pets</label>
+						<div class='col-md-8'>
+							<div class='make-switch'>
+								<input id='pets' type='checkbox'>
+							</div>
+						</div>
+					</div>
+					<!--text area-->
+					<div class='form-group'>
+						<label class='control-label col-md-2 col-md-offset-2' for='comments'>Comments</label>
+						<div class='col-md-6'>
+							<textarea class='form-control' id='comments' placeholder='Additional comments' rows='3'></textarea>
+						</div>
+					</div>
+					<!--Button area-->
+					<div class='form-group'>
+						<div class='col-md-offset-4 col-md-3'>
+							<button class='btn-lg btn-primary' type='submit'>Request Reservation</button>
+						</div>
+						<div class='col-md-3'>
+							<button class='btn-lg btn-danger' style='float:right;' type='submit'>Cancel</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
